@@ -1,5 +1,12 @@
+:root {
+    --bg-color: #527318;
+    --bar-height: 70px;
+    --header-text: #feb72b;
+}
+
+
 body {
-    background: #527318;
+    background: var(--bg-color);
 }
 
 /* Color Scheme
@@ -10,7 +17,7 @@ body {
 */
 
 header {
-    color: #feb72b;
+    color: var(--header-text);
     text-align: center;
 }
 
@@ -29,8 +36,9 @@ header {
 
 .Graph-header {
     grid-row: 1;
-    grid-column: 1;
+    grid-column: 1 / span 3;
     text-align: center;
+    color: var(--header-text);
 }
 
 .Graph-content {
@@ -44,7 +52,7 @@ header {
 
 .Graph-bar {
     background: #e7c710;
-    height: 70px;
+    height: var(--bar-height);
     border: 2px solid grey;
     display: grid;
     align-items: center;
@@ -58,4 +66,29 @@ header {
     padding: 10px;
     font-size: 30px;
     color: #feb72b;
+}
+
+@media screen and (max-width: 950px) {
+    
+    .Graph {
+        grid-template-columns: 1fr 600px 1fr;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .Graph {
+        grid-template-columns: 1fr 500px 1fr;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Graph {
+        grid-template-columns: 1fr 400px 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Graph {
+        grid-template-columns: 1fr 300px 1fr;
+    }
 }
