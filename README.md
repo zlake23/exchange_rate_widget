@@ -4,7 +4,9 @@
 This widget allows a user to check exchange rates of various countries in comparison to the EURO. 
 
 ## Data Package
-The data is fetched from an API, [Foreign Exchange Rates](exchangeratesapi.io).
+* The data is fetched from an API, [Foreign Exchange Rates](exchangeratesapi.io).
+
+* Current data displayed is calculated from [Latest Exchange Rates](https://api.exchangeratesapi.io/latest)
 
 ## Data Visualization Scheme
 
