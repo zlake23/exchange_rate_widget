@@ -9,13 +9,6 @@ body {
     background: var(--bg-color);
 }
 
-/* Color Scheme
-    #ffe75e
-    #feb72b
-    #899857
-    #527318
-*/
-
 header {
     color: var(--header-text);
     text-align: center;
@@ -69,7 +62,6 @@ header {
 }
 
 @media screen and (max-width: 950px) {
-    
     .Graph {
         grid-template-columns: 1fr 600px 1fr;
     }
@@ -79,16 +71,25 @@ header {
     .Graph {
         grid-template-columns: 1fr 500px 1fr;
     }
+    .Graph-bar:hover {
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 650px) {
     .Graph {
         grid-template-columns: 1fr 400px 1fr;
     }
+    .Graph-bar:hover {
+        padding: 3px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .Graph {
         grid-template-columns: 1fr 300px 1fr;
+    }
+    .Graph-bar:hover {
+        padding: 2px;
     }
 }
