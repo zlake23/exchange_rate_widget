@@ -1,7 +1,8 @@
 :root {
     --bg-color: #527318;
     --bar-height: 70px;
-    --header-text: #feb72b;
+    --border-color: #feb72b;
+    --header-text: #e7c710;
 }
 
 
@@ -16,11 +17,11 @@ header {
 
 .Container {
     height: 100vh;
-    border: 5px solid #527318;
+    border: 5px solid var(--border-color);
 }
 
 .Graph {
-    border: 3px solid #feb72b;
+
     display: grid;
     background: #899857;
     grid-template-columns: 1fr 800px 1fr;
@@ -37,7 +38,7 @@ header {
 .Graph-content {
     grid-row: 2;
     grid-column: 2;
-    border: 3px solid black;
+    border: 3px solid var(--border-color);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -53,7 +54,7 @@ header {
 }
 
 .Graph-bar:hover {
-    background: #527318;
+    background: var(--bg-color);
     transition: 1.3s;
     box-shadow: 5px 5px 3px black;
     padding: 10px;
